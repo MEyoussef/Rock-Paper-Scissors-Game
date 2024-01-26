@@ -52,13 +52,21 @@ int main()
 
     // [ ======================= ]
 
-    Sleep(1000);
-    std::cout << ".";
-    Sleep(1000);
-    std::cout << ".";
-    Sleep(1000);
-    std::cout << "." << std::endl;
+    // Sleep(1000);
+    // std::cout << ".";
+    // Sleep(1000);
+    // std::cout << ".";                      [  Do Not Repeat it, Use Loops  ]
+    // Sleep(1000);
+    // std::cout << "." << std::endl;
 
+    for (int i = 0; i < 3; i++)
+    {
+        Sleep(1000);
+        std::cout << ".";
+    }
+
+    std::cout << std::endl;
+    
     // [ ======================= ]
 
     if (Your_Str == Computer_Str)
@@ -79,7 +87,7 @@ int main()
     }
     else if (Your_Str == "Paper" && Computer_Str == "Rock")
     {
-        std::cout << "Player 2 Won!";
+        std::cout << "Player 1 Won!";
     }
     else if (Your_Str == "Rock" && Computer_Str == "Scissors")
     {
